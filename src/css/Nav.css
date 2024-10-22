@@ -1,0 +1,7 @@
+
+.nav-link.active {
+    border-bottom: 2px solid #4dff00;
+    color: #c2ffa8 !important;
+    font-weight: bold;
+    
+}

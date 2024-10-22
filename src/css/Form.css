@@ -1,0 +1,53 @@
+/* Gradient Animation */
+body {
+    background-image: radial-gradient(circle at 48% 33%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), 
+    radial-gradient(circle at 28% 16%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), 
+    radial-gradient(circle at 34% 52%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), 
+    radial-gradient(circle at 92% 52%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), 
+    radial-gradient(circle at 77% 84%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), 
+    radial-gradient(circle at 75% 64%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), 
+    radial-gradient(circle at 70% 62%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), 
+    radial-gradient(circle at 55% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), 
+    radial-gradient(circle at 12% 11%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), 
+    radial-gradient(circle at 35% 55%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), 
+    linear-gradient(45deg, rgb(26, 21, 192), rgb(171, 83, 239));
+    background-size: 200% 200%;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 50% 50%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.11);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Button Styling */
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Animation */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1a15c0; /* Text color change on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
